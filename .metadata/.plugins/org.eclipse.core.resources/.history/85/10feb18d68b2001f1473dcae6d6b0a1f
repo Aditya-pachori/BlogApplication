@@ -1,0 +1,22 @@
+package com.blog.payloads;
+
+import java.util.Date;
+import java.util.Locale.Category;
+
+import com.blog.entities.User;
+
+public class PostDto 
+{
+	private String title;
+	
+	private String content;
+	
+	private String imageName;
+	
+	private Date addedDate;
+	
+	private Category category;
+	
+	private User user;
+	
+}

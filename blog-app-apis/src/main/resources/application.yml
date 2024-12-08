@@ -1,0 +1,20 @@
+# Conversion to YAML from Properties formar report
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+server:
+  port: 9090
+debug: true
+spring:
+  application:
+    name: blog_app_apis
+  datasource:
+    url: jdbc:mysql://localhost:3306/blog_app_apis
+    username: root
+    password: cdac@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
